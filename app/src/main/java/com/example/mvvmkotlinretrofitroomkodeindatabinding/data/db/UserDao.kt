@@ -1,10 +1,12 @@
-package com.example.mvvmkotlinretrofitroomkodeindatabinding.data.db.entities
+package com.example.mvvmkotlinretrofitroomkodeindatabinding.data.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.example.mvvmkotlinretrofitroomkodeindatabinding.data.db.entities.CURRENT_USER_ID
+import com.example.mvvmkotlinretrofitroomkodeindatabinding.data.db.entities.User
 
 @Dao
 interface UserDao{

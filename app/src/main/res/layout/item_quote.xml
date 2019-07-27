@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="quote"
+                  type="com.example.mvvmkotlinretrofitroomkodeindatabinding.data.db.entities.Quote"/>
+    </data>
+
+    <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_margin="5pt"
+                  android:layout_height="wrap_content">
+
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@{'`'+quote.quote+'`'}"
+                  tools:text="Qutes name"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="3pt"
+                  android:layout_gravity="end"
+                  tools:text="auther name"
+                  android:text="@{'`'+quote.author+'`'}"
+        />
+        <View android:layout_width="fill_parent"
+              android:layout_marginTop="3pt"
+              android:layout_height="0.1pt"></View>
+
+
+    </LinearLayout>
+</layout>
